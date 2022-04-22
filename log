@@ -191,3 +191,14 @@ treemap.c:84:8: error: implicit declaration of function ‘lower_than’ [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 1651c87
+Fri Apr 22 16:01:49 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:84:8: error: implicit declaration of function ‘lower_than’ [-Werror=implicit-function-declaration]
+     if(lower_than(aux->pair->key, key)){
+        ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+42a0eec

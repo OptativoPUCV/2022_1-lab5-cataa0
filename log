@@ -163,3 +163,20 @@ Fri Apr 22 15:58:51 UTC 2022:
  tests:  10|6
 total_score: 5/70
 b31a343
+Fri Apr 22 16:00:37 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:84:8: error: implicit declaration of function ‘lower_than’ [-Werror=implicit-function-declaration]
+     if(lower_than(key, aux->pair->key){
+        ^~~~~~~~~~
+treemap.c:84:39: error: expected ‘)’ before ‘{’ token
+     if(lower_than(key, aux->pair->key){
+                                       ^
+treemap.c:90:3: error: expected expression before ‘}’ token
+   }
+   ^
+cc1: all warnings being treated as errors
+Compilation failed
+d0b2c61

@@ -30,3 +30,37 @@ Fri Apr 22 15:27:37 UTC 2022:
  tests:  4|7
 total_score: 5/70
 e4401ba
+Fri Apr 22 15:34:15 UTC 2022: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘minimum’:
+treemap.c:54:6: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘current’; did you mean ‘parent’?
+   x->current=x->root;
+      ^~~~~~~
+      parent
+treemap.c:54:15: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘root’
+   x->current=x->root;
+               ^~
+treemap.c:55:12: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘current’; did you mean ‘parent’?
+   while(x->current->left != NULL){
+            ^~~~~~~
+            parent
+treemap.c:56:8: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘current’; did you mean ‘parent’?
+     x->current=x->current->left;
+        ^~~~~~~
+        parent
+treemap.c:56:19: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘current’; did you mean ‘parent’?
+     x->current=x->current->left;
+                   ^~~~~~~
+                   parent
+treemap.c:58:13: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘current’; did you mean ‘parent’?
+   return x->current;
+             ^~~~~~~
+             parent
+treemap.c:59:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+0313fb7

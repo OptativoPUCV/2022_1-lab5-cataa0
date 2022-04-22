@@ -2,3 +2,25 @@ Fri Apr 22 15:25:28 UTC 2022:
  tests:  1|8
 total_score: 0/70
 eb8e80d
+Fri Apr 22 15:25:57 UTC 2022: 
+ treemap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:6: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘key1’
+   new->key1=key1;
+      ^~
+treemap.c:42:13: error: ‘key1’ undeclared (first use in this function); did you mean ‘key_t’?
+   new->key1=key1;
+             ^~~~
+             key_t
+treemap.c:42:13: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:43:6: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘key2’
+   new->key2=key2;
+      ^~
+treemap.c:43:13: error: ‘key2’ undeclared (first use in this function); did you mean ‘key1’?
+   new->key2=key2;
+             ^~~~
+             key1
+Compilation failed
+5af79ec

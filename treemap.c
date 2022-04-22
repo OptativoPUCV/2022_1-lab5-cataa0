@@ -79,7 +79,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   while(aux != NULL){
     if(key == aux->pair->key){
       tree->current = aux;
-      return aux;
+      return 1;
     }
     else{
       if(key > aux->pair->key){
@@ -90,7 +90,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       }
     }
   }
-  return NULL;
+  return 0;
 }
 
 

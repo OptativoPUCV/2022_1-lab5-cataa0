@@ -81,15 +81,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       tree->current = aux;
       return aux->pair;
     }
+    
+    if(key > aux->pair->key){
+      aux = aux->right;  
+    }
     else{
-      if(key > aux->pair->key){
-        aux = aux->right;  
-      }
-      else{
-        aux=aux->left;
-      }
+      aux=aux->left;
     }
   }
+  
   return NULL;
 }
 

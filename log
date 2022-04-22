@@ -92,3 +92,14 @@ treemap.c:82:14: error: return makes pointer from integer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 440195e
+Fri Apr 22 15:47:42 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:82:14: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+       return tree;
+              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+10afdac

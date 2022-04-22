@@ -123,3 +123,9 @@ treemap.c:82:14: error: incompatible types when returning type ‘TreeMap {aka s
               ^~~~~
 Compilation failed
 083936a
+Fri Apr 22 15:48:35 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|6
+total_score: 5/70
+7024f0e

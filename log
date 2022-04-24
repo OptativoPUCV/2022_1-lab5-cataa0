@@ -208,3 +208,17 @@ Fri Apr 22 16:03:03 UTC 2022:
  tests:  13|5
 total_score: 15/70
 c371c78
+Sun Apr 24 19:51:25 UTC 2022: 
+ treemap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:47: error: value computed is not used [-Werror=unused-value]
+     else(tree->lower_than(key, aux->pair->key)==1){
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+treemap.c:57:51: error: expected ‘;’ before ‘{’ token
+     else(tree->lower_than(key, aux->pair->key)==1){
+                                                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+c2873f5

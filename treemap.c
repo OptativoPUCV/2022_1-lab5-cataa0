@@ -133,7 +133,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     aux=minimum(tree->current->right);
   }
   while(aux!=NULL){
-    if(tree->lower_than(aux->apir->key, tree->current->parent->pair->key)==1)
+    if(tree->lower_than(aux->pair->key, tree->current->parent->pair->key)==1)
     tree->current=tree->current->parent;
   }
   return tree->current->pair;

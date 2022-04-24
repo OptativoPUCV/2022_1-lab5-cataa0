@@ -295,3 +295,13 @@ treemap.c:58:16: error: ‘TreeNode {aka struct TreeNode}’ has no member named
 cc1: all warnings being treated as errors
 Compilation failed
 e9d1efd
+Sun Apr 24 22:15:27 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:48: error: expected ‘;’ before ‘{’ token
+     else(tree->lower_than(key, aux->pair->key)){
+                                                ^
+Compilation failed
+01e08c9

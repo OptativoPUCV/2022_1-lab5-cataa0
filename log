@@ -446,3 +446,14 @@ Sun Apr 24 23:48:02 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9245a4f
+Sun Apr 24 23:58:38 UTC 2022: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘nextTreeMap’:
+treemap.c:136:8: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   while(aux!=NULL){
+        ^
+cc1: all warnings being treated as errors
+Compilation failed
+024cfb8

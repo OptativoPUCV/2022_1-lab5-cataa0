@@ -262,3 +262,11 @@ treemap.c:57:48: error: expected ‘;’ before ‘{’ token
                                                 ^
 Compilation failed
 063ddfd
+Sun Apr 24 19:55:58 UTC 2022: 
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:48: error: expected ‘;’ before ‘{’ token
+     else(tree->lower_than(key, aux->pair->key)){
+                                                ^
+Compilation failed
+ec04419

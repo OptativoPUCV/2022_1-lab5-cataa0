@@ -278,3 +278,20 @@ treemap.c:57:48: error: expected ‘;’ before ‘{’ token
                                                 ^
 Compilation failed
 99e79f0
+Sun Apr 24 22:14:37 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:5: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+     else(tree->lower_than(key, aux->pair->key));{
+     ^~~~
+treemap.c:57:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+     else(tree->lower_than(key, aux->pair->key));{
+                                                 ^
+treemap.c:58:16: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘new’
+       aux->left->new;
+                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+e9d1efd

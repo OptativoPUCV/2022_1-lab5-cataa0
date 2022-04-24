@@ -54,7 +54,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
       aux->right=new;
       new->parent->right=aux;
     } 
-    else(tree->lower_than(key, aux->pair->key)){
+    else if(tree->lower_than(key, aux->pair->key)){
       aux->left=new;
       new->parent->left=aux;
     }   

@@ -430,3 +430,14 @@ Sun Apr 24 23:00:58 UTC 2022:
  tests:  17|3
 total_score: 30/70
 689c78a
+Sun Apr 24 23:47:31 UTC 2022: 
+ treemap.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:136:30: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘apir’; did you mean ‘pair’?
+     if(tree->lower_than(aux->apir->key, tree->current->parent->pair->key)==1)
+                              ^~~~
+                              pair
+Compilation failed
+342a2f4

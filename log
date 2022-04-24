@@ -344,3 +344,18 @@ Sun Apr 24 22:24:23 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f69fca0
+Sun Apr 24 22:27:19 UTC 2022: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:63:3: error: expected expression before ‘}’ token
+   }
+   ^
+treemap.c:63:3: error: ‘return’ with a value, in function returning void [-Werror]
+treemap.c:49:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+468db4e

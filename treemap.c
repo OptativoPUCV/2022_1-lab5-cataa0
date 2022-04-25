@@ -95,7 +95,17 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     node->pair=aux->pair;
     removeNode(tree, aux);  
   }
-  
+  // 1 hijo  
+  else{
+    if(node->right==NULL){
+      node->parent->left=node->left;
+      node->left->parent=node->parent;
+    }
+    if(node->left==NULL){
+      node->parent->left=node->right;
+      node->right->parent=node->parent;
+    }
+  }
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){

@@ -172,14 +172,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
       
       
     }
-    else if(tree->lower_than(tree->current->pair->key, key)==1){
+    else{ 
       tree->current=tree->current->right;  
-    }
-    else{
       ub_node=tree->current;
       break;
     }
-  }
   if(ub_node == NULL){
     return NULL;
   } 

@@ -593,3 +593,30 @@ Mon Apr 25 02:34:05 UTC 2022:
  tests:  20|2
 total_score: 45/70
 0826fc9
+Mon Apr 25 03:24:58 UTC 2022: 
+ treemap.c | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:166:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode * ub_node=NULL;
+   ^~~~~~~~
+   TreeNode
+treemap.c:170:20: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       tree->current=ub_node;
+                    ^
+treemap.c:174:20: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       tree->current=ub_node;
+                    ^
+treemap.c:177:14: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       ub_node=tree->current;
+              ^
+treemap.c:180:17: error: request for member ‘pair’ in something not a structure or union
+   return ub_node->pair;
+                 ^~
+treemap.c:181:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+782e0f2

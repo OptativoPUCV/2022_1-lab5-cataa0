@@ -752,3 +752,14 @@ treemap.c:195:13: error: variable ‘aux’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 72598b2
+Mon Apr 25 04:09:16 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘nextTreeMap’:
+treemap.c:206:13: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   return aux->pair;
+          ~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b735286

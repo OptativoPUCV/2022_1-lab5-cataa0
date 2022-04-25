@@ -652,3 +652,8 @@ treemap.c:166:14: error: variable ‘ub_node’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 9c65307
+Mon Apr 25 03:40:21 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+fc79fd5

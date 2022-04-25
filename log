@@ -503,3 +503,14 @@ treemap.c:96:5: error: expected ‘;’ before ‘removeNode’
      ^~~~~~~~~~
 Compilation failed
 c2ff94c
+Mon Apr 25 00:22:22 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘nextTreeMap’:
+treemap.c:148:8: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   while(aux!=NULL){
+        ^
+cc1: all warnings being treated as errors
+Compilation failed
+9e7f961

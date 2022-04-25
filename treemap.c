@@ -140,9 +140,9 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-  TreeNode *aux;
+  //TreeNode *aux;
   if(tree->current->right!=NULL){
-    aux=minimum(tree->current->right);
+  //  aux=minimum(tree->current->right);
     return tree->current->pair;
   }
   

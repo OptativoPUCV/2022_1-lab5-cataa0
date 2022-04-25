@@ -625,3 +625,14 @@ Mon Apr 25 03:27:29 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 83894ec
+Mon Apr 25 03:33:44 UTC 2022: 
+ treemap.c | 21 +++++++++++++--------
+ 1 file changed, 13 insertions(+), 8 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:182:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   if(ub_node=NULL){
+      ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ce8a17e

@@ -203,8 +203,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else{
       tree->current=tree->current->parent;
-      return tree->current->pair;
+      return aux->pair;
     }
   }
-  return aux->pair;
+  return tree->current->pair;
 }

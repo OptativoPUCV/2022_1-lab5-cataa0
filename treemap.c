@@ -201,10 +201,10 @@ Pair * nextTreeMap(TreeMap * tree) {
   while(aux!=NULL){
     if(tree->lower_than(tree->current->pair->key, aux->pair->key)==1){
       tree->current=aux;
+      aux=aux->parent;
     }
     else{
       tree->current=aux;
-      return tree->current->pair;
     }
     
   }

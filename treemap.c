@@ -175,6 +175,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       tree->current=tree->current->right;  
     }
     else{
+      ub_node=tree->current;
       break;
     }
   }

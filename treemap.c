@@ -197,11 +197,11 @@ Pair * nextTreeMap(TreeMap * tree) {
     aux=minimum(tree->current->right);
     return tree->current->pair;
   }
-  
-  if(tree->lower_than(tree->current->pair->key, tree->current->parent->pair->key)==1){
-    tree->current=tree->current->parent;
+  while(tree->current->parent!=NULL){
+    if(tree->lower_than(tree->current->pair->key, tree->current->parent->pair->key)==1){
+      tree->current=tree->current->parent;
+    }
     
   }
-  
   return aux->pair;
 }

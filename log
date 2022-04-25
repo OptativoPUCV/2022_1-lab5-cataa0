@@ -514,3 +514,27 @@ treemap.c:148:8: error: ‘aux’ may be used uninitialized in this function [-W
 cc1: all warnings being treated as errors
 Compilation failed
 9e7f961
+Mon Apr 25 00:23:07 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+test.c: In function ‘nextTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+In file included from test.c:4:0:
+treemap.c:143:13: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   TreeNode *aux;
+             ^~~
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4117ba1

@@ -175,13 +175,12 @@ Pair * upperBound(TreeMap * tree, void* key) {
       ub_node=tree->current;
     }
     else{
-      tree->current=ub_node;
+      ub_node=tree->current;
+      break;
     }
     
   }
-  if(ub_node=NULL){
-    return NULL;
-  }
+
   return ub_node->pair;
 }
 
